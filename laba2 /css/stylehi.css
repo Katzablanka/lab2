@@ -1,0 +1,127 @@
+
+
+
+
+/* hi */
+
+#hi-fly {
+    margin: 0;
+    padding: 0;
+}
+#hi-fly {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+.welcome-section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+.welcome-section .content-wrap {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.welcome-section .content-wrap .fly-in-text {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+.first{
+    display: grid;
+    grid-gap: 3vw;
+    width: 100%;
+    grid-template-columns: 50vw 50vw;
+
+}
+.second{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 50vw 50vw;
+
+}
+.welcome-section .content-wrap .fly-in-text li  {
+  
+
+    margin-right: 0px;
+    font-size: 3em;
+    color: #fff;
+    opacity: 1;
+    transition: all 2s ease;
+}
+.welcome-section .content-wrap .fly-in-text li.one {
+    margin-right: 0;
+    text-align: right;
+}
+.welcome-section .content-wrap .fly-in-text li.two {
+    margin-right: 0;
+    text-align: left;
+}
+.welcome-section .content-wrap .fly-in-text li.three {
+   
+    margin-right: 0;
+    text-align: right;
+
+}
+.welcome-section .content-wrap .fly-in-text li.fore {
+    margin-right: 0; 
+   
+}
+.welcome-section .content-wrap .enter-button {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 1;
+    transition: all 1s ease 2s;
+}
+.enter-button{ 
+    background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%)} 
+  .enter-button {
+     margin: 10px;
+     padding: 1rem;
+     display: inline-block;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+  
+  .enter-button:hover{
+    background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+  }
+.flip_v{
+    -moz-transform: scale(1, -1);
+-webkit-transform: scale(1, -1);
+-o-transform: scale(1, -1);
+-ms-transform: scale(1, -1);
+transform: scale(1, -1);
+}
+
+.welcome-section.content-hidden .content-wrap .fly-in-text li { opacity: 0; }
+.welcome-section.content-hidden .content-wrap .fly-in-text li.one { transform: translate3d(-100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .fly-in-text li.two { transform: translate3d(100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .fly-in-text li.three { transform: translate3d(-100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .fly-in-text li.fore { transform: translate3d(100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
+
+@media (min-width: 800px) {
+    .welcome-section .content-wrap .fly-in-text li { font-size: 10em; }
+    .welcome-section .content-wrap .enter-button { font-size: 1.5em; }
+}
+
+/* tresh */
